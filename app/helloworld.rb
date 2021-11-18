@@ -1,9 +1,18 @@
 require 'sinatra'
 require 'JSON'
 
+$version = File.read("./VERSION")
+
 get '/' do
-  "Hello World from Ricc!"
+  "Hello World from Ruby (Sinatra)! <br/>
+  App Version: <b>#{$version}</b>"
 end
+
+get '/varz' do
+  "TODO(ricc): some prometheus vars"
+end
+
+
 
 get '/hello-world.json' do
   content_type :json # Content-Type: application/json;charset=utf-8
