@@ -3,15 +3,16 @@ FROM ruby:3.0.2
 
 WORKDIR /app
 ADD Gemfile /app/Gemfile
-ADD Gemfile.lock /app/Gemfile.lock
-RUN bundle install --system
-
+#ADD Gemfile.lock /app/Gemfile.lock
+RUN gem install bundler
+RUN bundle install
+RUN bundle update --bundler
 ADD . /app
-RUN bundle install --system
+# RUN bundle install
 
-EXPOSE 4567
+EXPOSE 8080
 
-CMD ["ruby", "app.rb"]
+CMD ["ruby", "helloworld.rb"]
 
 # https://github.com/tongueroo/sinatra/blob/master/Dockerfile
 

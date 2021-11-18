@@ -16,7 +16,8 @@ JSON/HTML curls from: https://coderwall.com/p/3k1hsw/hello-world-with-sinatra
 
 ## Build
 
-* app/Dockerfile
+* app is dockerized (WIP): `app/Dockerfile`.
+
 
 ## Cloud Deploy
 
