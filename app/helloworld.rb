@@ -1,11 +1,13 @@
 require 'sinatra'
 require 'JSON'
 
+#TODO(ricc): use Sinatra reloader to test ENV
+# https://towardsdatascience.com/how-to-dockerize-an-existing-sinatra-application-3a6943d7a428 
 $version = File.read("./VERSION")
 
 get '/' do
   "Hello World from Ruby (Sinatra)! <br/>
-  App Version: <b>#{$version}</b>"
+  App Version: <b>#{$version} (env=#{ENV}/APP_ENV=#{APP_ENV})</b>"
 end
 
 get '/varz' do

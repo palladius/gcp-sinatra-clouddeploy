@@ -16,8 +16,12 @@ JSON/HTML curls from: https://coderwall.com/p/3k1hsw/hello-world-with-sinatra
 
 ## Build
 
-TODO(ricc)
+* app/Dockerfile
 
 ## Cloud Deploy
 
 TODO(ricc)
+
+## Links
+
+* Dockerization of Sinatra: https://towardsdatascience.com/how-to-dockerize-an-existing-sinatra-application-3a6943d7a428
