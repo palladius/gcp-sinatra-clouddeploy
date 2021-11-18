@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'JSON'
+#require 'JSON'
 
 #TODO(ricc): use Sinatra reloader to test ENV
 # https://towardsdatascience.com/how-to-dockerize-an-existing-sinatra-application-3a6943d7a428 
@@ -16,9 +16,9 @@ end
 
 
 
-get '/hello-world.json' do
-  content_type :json # Content-Type: application/json;charset=utf-8
+# get '/hello-world.json' do
+#   content_type :json # Content-Type: application/json;charset=utf-8
 
-  # Use to_json to generate JSON based on the Ruby hash
-  {greeting: 'Hello World!'}.to_json
-end
+#   # Use to_json to generate JSON based on the Ruby hash
+#   {greeting: 'Hello World!'}.to_json
+# end

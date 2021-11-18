@@ -4,7 +4,7 @@ install:
 	cd app && bundle install
 
 run:
-	cd app && bundle exec rackup -p 8080
+	cd app && bundle exec rackup -p 8080 --host 0.0.0.0
 
 cloud-build-test:
 	cd app/ && docker build \

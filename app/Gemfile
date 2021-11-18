@@ -2,3 +2,6 @@ source 'http://rubygems.org'
 
 gem 'sinatra'
 #gem 'json'
+
+# build2 says it cant find any among puma, webrick , ..
+gem 'puma'

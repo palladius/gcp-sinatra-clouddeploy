@@ -9,10 +9,14 @@ RUN bundle install
 RUN bundle update --bundler
 ADD . /app
 # RUN bundle install
+RUN bundle update --bundler
+RUN bundle install
+
 
 EXPOSE 8080
 
-CMD ["ruby", "helloworld.rb"]
+#CMD ["ruby", "helloworld.rb"]
+CMD ["rackup"]
 
 # https://github.com/tongueroo/sinatra/blob/master/Dockerfile
 
