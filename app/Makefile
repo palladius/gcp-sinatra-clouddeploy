@@ -21,10 +21,10 @@ run-local-p8080:
 run-local-bash: 
 	docker run -it -p 8080:8080 $(APPNAME):v$(VERSION) bash
 
-run-local2: 
-	docker run -it -p 8080:8082 $(APPNAME_TEST):v$(VERSION)
+run-local2-p8082: 
+	docker run -it -p 8082:8080 $(APPNAME_TEST):v$(VERSION)
 run-local-bash2: 
-	docker run -it -p 8080:8082 $(APPNAME_TEST):v$(VERSION) bash
+	docker run -it -p 8082:8080 $(APPNAME_TEST):v$(VERSION) bash
 
 
 list:

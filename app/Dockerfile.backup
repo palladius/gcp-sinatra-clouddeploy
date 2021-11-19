@@ -16,7 +16,8 @@ RUN bundle install
 EXPOSE 8080
 
 #CMD ["ruby", "helloworld.rb"]
-CMD ["rackup"]
+#CMD ["rackup"]
+CMD ["rackup", "--host", "0.0.0.0", "-p", "8080"]
 
 # https://github.com/tongueroo/sinatra/blob/master/Dockerfile
 
